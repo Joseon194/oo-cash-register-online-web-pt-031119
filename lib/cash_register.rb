@@ -9,8 +9,9 @@ def initialize(discount=0)
   @discount = discount
 end
   
-  def add_item(title, price)
-    
+  def add_item(title, price, quantity=1)
+    self.total += (price * quantity)
+    # @total += (price * quantity)
   end
   
 end
