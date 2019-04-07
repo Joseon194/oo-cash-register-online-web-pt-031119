@@ -9,6 +9,8 @@ def initialize(discount=0)
   @discount = discount
 end
   
-  def
+  def add_item(title, price)
+    
+  end
   
 end
