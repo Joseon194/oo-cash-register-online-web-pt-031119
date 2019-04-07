@@ -14,4 +14,7 @@ end
     # @total += (price * quantity)
   end
   
+  def apply_discount(title, price, discount)
+    @total * @discount
+  end
 end
