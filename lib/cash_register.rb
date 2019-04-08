@@ -14,7 +14,7 @@ end
     # @total += (price * quantity)
   end
   
-  def apply_discount(title, price, discount)
+  def apply_discount
     if @discount > 0
     "After the discount, the total comes to $#{ @total -= @discount * 10}."
   else
