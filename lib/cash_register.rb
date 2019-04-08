@@ -15,7 +15,7 @@ end
   end
   
   def apply_discount(title, price, discount)
-    @total -= (@total - @discount)
-    returns
+    @total = (@total - @discount * 10)
+    "After the discount, the total comes to $#{@total}."
   end
 end
