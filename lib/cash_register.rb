@@ -13,9 +13,11 @@ end
   def add_item(title, price, quantity=1)
     self.total += (price * quantity)
     # @total += (price * quantity)
-    @items << title * quantity
+    quantity.times do
+      @items << title 
   end
-  
+end
+
   def apply_discount
     if @discount > 0
     "After the discount, the total comes to $#{ @total -= @discount * 10}."
