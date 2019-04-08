@@ -15,9 +15,8 @@ end
   end
   
   def apply_discount(title, price, discount)
-    @total = (@total - @discount * 10)
     if @discount > 0
-    "After the discount, the total comes to $#{@total}."
+    "After the discount, the total comes to $#{@total -= @discount * 30}."
   else
     "There is no discount to apply"
   end
