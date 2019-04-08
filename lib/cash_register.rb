@@ -13,7 +13,6 @@ end
   def add_item(title, price, quantity=1)
     self.total += (price * quantity)
     # @total += (price * quantity)
-    @total += (price * quantity)
     
     while quantity > 0 
     @items << title
