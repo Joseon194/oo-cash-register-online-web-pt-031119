@@ -16,5 +16,6 @@ end
   
   def apply_discount(title, price, discount)
     @total -= (@total - @discount)
+    returns
   end
 end
